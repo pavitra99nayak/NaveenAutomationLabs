@@ -16,4 +16,9 @@
       <class name="NaveenAutomationLabs.ScenariosTest.LoginTest"/>
     </classes>
   </test> <!-- Test -->
+  <test thread-count="5" name="Register Validation">
+    <classes>
+      <class name="NaveenAutomationLabs.ScenariosTest.RegisterNegevetiveTest"/>
+    </classes>
+  </test> <!-- Test -->
 </suite> <!-- Suite -->
