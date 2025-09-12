@@ -1,0 +1,15 @@
+[
+	{
+		"FName":"NaveenTest1",
+		"LName":"LastName",
+		"Email":"naveenlambda@gmail.com",
+		"TelePhone":"9022320931",
+		"Password":"Abcd@1234"
+	},
+	{	"FName":"NaveenTest2",
+		"LName":"LastName",
+		"Email":"naveenlambda12@gmail.com",
+		"TelePhone":"9022320931",
+		"Password":"Abcd@1234"
+	}
+]
