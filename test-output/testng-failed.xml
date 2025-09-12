@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="NaveenAutomationLabs.ScenariosTest.RegisterTest">
+      <class name="NaveenAutomationLabs.ScenariosTest.LoginTest">
         <methods>
           <include name="LaunchApplication"/>
-          <include name="ValidRegisterTC1" invocation-numbers="0"/>
           <include name="tearDown"/>
+          <include name="ValidLogin" invocation-numbers="0 1"/>
         </methods>
-      </class> <!-- NaveenAutomationLabs.ScenariosTest.RegisterTest -->
+      </class> <!-- NaveenAutomationLabs.ScenariosTest.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
