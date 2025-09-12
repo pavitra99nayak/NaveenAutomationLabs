@@ -40,7 +40,8 @@ public class BaseTest{
 		if(BrowserName.contains("chrome"))
 		{
 			ChromeOptions option = new ChromeOptions();
-			option.addArguments("--incognito");
+			//option.addArguments("--incognito");
+			option.addArguments("--window-size=1920,1080");
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver(option);		
 		}
@@ -60,7 +61,7 @@ public class BaseTest{
 //			WebDriverManager.firefoxdriver().setup();
 //			driver = new FirefoxDriver(option);
 //		}
-		driver.manage().window().maximize();
+		//driver.manage().window().maximize();
 	}
 	
 	public List<HashMap<String, String>> dataReader(String FilePath) throws IOException
