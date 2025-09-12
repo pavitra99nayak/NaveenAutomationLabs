@@ -23,10 +23,7 @@ public class RegisterTest extends BaseTest{
 	{
 		RegisterPage Register = new RegisterPage(driver);
 		Register.RegisterNewUser(input.get("FName"), input.get("LName"), input.get("Email"), input.get("TelePhone"), input.get("Password"));
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-	    WebElement successMsg = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@id='content']//h1")));
-
-	    String Actual = successMsg.getText();
+	    String Actual = driver.findElement(By.xpath("//div[@id='content']//h1")).getText();
 	    Assert.assertEquals(Actual, "Your Account Has Been Created!");
 		Register.logOut();
 	}

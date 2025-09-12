@@ -56,6 +56,7 @@ public class RegisterPage extends AbstractMethod{
 		confimPass.sendKeys(Password);
 		checbox.click();
 		cntBtn.click();
+		WaitForVisibleElement(By.xpath("//div[@id='content']//h1"));
 	}
 	public void logOut()
 	{

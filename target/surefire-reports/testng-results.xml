@@ -2,38 +2,38 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-12T20:06:33 IST" name="Suite" finished-at="2025-09-12T20:06:43 IST" duration-ms="10081">
+  <suite started-at="2025-09-12T20:55:19 IST" name="Suite" finished-at="2025-09-12T20:55:29 IST" duration-ms="9409">
     <groups>
     </groups>
-    <test started-at="2025-09-12T20:06:33 IST" name="Test" finished-at="2025-09-12T20:06:43 IST" duration-ms="10081">
+    <test started-at="2025-09-12T20:55:19 IST" name="Test" finished-at="2025-09-12T20:55:29 IST" duration-ms="9409">
       <class name="NaveenAutomationLabs.ScenariosTest.RegisterTest">
-        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:NaveenAutomationLabs.ScenariosTest.RegisterTest@710636b0]" started-at="2025-09-12T20:06:33 IST" name="LaunchApplication" finished-at="2025-09-12T20:06:37 IST" duration-ms="3698" status="PASS">
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:NaveenAutomationLabs.ScenariosTest.RegisterTest@710636b0]" started-at="2025-09-12T20:55:19 IST" name="LaunchApplication" finished-at="2025-09-12T20:55:23 IST" duration-ms="3408" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchApplication -->
-        <test-method signature="ValidRegisterTC1(java.util.HashMap)[pri:0, instance:NaveenAutomationLabs.ScenariosTest.RegisterTest@710636b0]" started-at="2025-09-12T20:06:37 IST" name="ValidRegisterTC1" data-provider="DataSet" finished-at="2025-09-12T20:06:41 IST" duration-ms="3402" status="PASS">
+        <test-method signature="ValidRegisterTC1(java.util.HashMap)[pri:0, instance:NaveenAutomationLabs.ScenariosTest.RegisterTest@710636b0]" started-at="2025-09-12T20:55:23 IST" name="ValidRegisterTC1" data-provider="DataSet" finished-at="2025-09-12T20:55:26 IST" duration-ms="3176" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{TelePhone=9022320931, Email=naveen151@gmail.com, LName=LastName, FName=naveen121, Password=Abcd@@1234}]]>
+                <![CDATA[{TelePhone=9022320931, Email=naveen157@gmail.com, LName=LastName, FName=naveen121, Password=Abcd@@1234}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidRegisterTC1 -->
-        <test-method signature="ValidRegisterTC1(java.util.HashMap)[pri:0, instance:NaveenAutomationLabs.ScenariosTest.RegisterTest@710636b0]" started-at="2025-09-12T20:06:41 IST" name="ValidRegisterTC1" data-provider="DataSet" finished-at="2025-09-12T20:06:43 IST" duration-ms="2696" status="PASS">
+        <test-method signature="ValidRegisterTC1(java.util.HashMap)[pri:0, instance:NaveenAutomationLabs.ScenariosTest.RegisterTest@710636b0]" started-at="2025-09-12T20:55:26 IST" name="ValidRegisterTC1" data-provider="DataSet" finished-at="2025-09-12T20:55:29 IST" duration-ms="2484" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{TelePhone=9022320931, Email=naveen152@gmail.com, LName=LastName, FName=NaveenTest2, Password=Abcd@@1234}]]>
+                <![CDATA[{TelePhone=9022320931, Email=naveen158@gmail.com, LName=LastName, FName=NaveenTest2, Password=Abcd@@1234}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidRegisterTC1 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:NaveenAutomationLabs.ScenariosTest.RegisterTest@710636b0]" started-at="2025-09-12T20:06:43 IST" name="tearDown" finished-at="2025-09-12T20:06:43 IST" duration-ms="140" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:NaveenAutomationLabs.ScenariosTest.RegisterTest@710636b0]" started-at="2025-09-12T20:55:29 IST" name="tearDown" finished-at="2025-09-12T20:55:29 IST" duration-ms="209" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
