@@ -27,7 +27,8 @@ public class Listners extends BaseTest implements ITestListener {
 	@Override
 	public void onTestSuccess(ITestResult result) {
 		// TODO Auto-generated method stub
-		thread.get().log(Status.PASS, "Test Pass");
+		thread.get().log(Status.PASS, result.getMethod().getMethodName()+" Test Case is Pass");
+		
 	}
 
 	@Override

@@ -1,14 +1,18 @@
 package NaveenAutomationLabs.PageObject;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class RegisterPage {
+import NaveenAutomationLabs.AbstractMethods.AbstractMethod;
+
+public class RegisterPage extends AbstractMethod{
 	WebDriver driver;
 	public RegisterPage(WebDriver driver)
 	{
+		super(driver);
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
@@ -33,10 +37,17 @@ public class RegisterPage {
 	WebElement checbox;
 	@FindBy(xpath="//input[@value='Continue']")
 	WebElement cntBtn;
+	@FindBy(xpath="//div[@class='pull-right']")
+	WebElement continueBtn;
+	@FindBy(xpath="(//ul[@class='dropdown-menu dropdown-menu-right']//li)[5]")
+	WebElement logout;
+	@FindBy(xpath="(//span[@class='hidden-xs hidden-sm hidden-md'])[3]")
+	WebElement myAct2;
 	public void RegisterNewUser(String Name,String LName,String Email, String TelPhn,String Password)
 	{
 		myActBtn.click();
 		loginBtn.click();
+		//WaitForVisibleElement(By.id("input-lastname"));
 		fName.sendKeys(Name);
 		lName.sendKeys(LName);
 		email.sendKeys(Email);
@@ -45,5 +56,12 @@ public class RegisterPage {
 		confimPass.sendKeys(Password);
 		checbox.click();
 		cntBtn.click();
+	}
+	public void logOut()
+	{
+		WaitForVisibleElement(By.xpath("//div[@class='pull-right']"));
+		continueBtn.click();
+		myAct2.click();
+		logout.click();
 	}
 }

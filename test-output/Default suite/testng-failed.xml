@@ -5,8 +5,8 @@
     <classes>
       <class name="NaveenAutomationLabs.ScenariosTest.RegisterTest">
         <methods>
-          <include name="ValidRegisterTC1" invocation-numbers="1"/>
           <include name="LaunchApplication"/>
+          <include name="ValidRegisterTC1" invocation-numbers="0 1"/>
         </methods>
       </class> <!-- NaveenAutomationLabs.ScenariosTest.RegisterTest -->
     </classes>

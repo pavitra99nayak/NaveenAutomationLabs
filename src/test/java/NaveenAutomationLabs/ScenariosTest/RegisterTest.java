@@ -1,9 +1,15 @@
 package NaveenAutomationLabs.ScenariosTest;
 
 import java.io.IOException;
+import java.time.Duration;
 import java.util.HashMap;
 import java.util.List;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -17,6 +23,12 @@ public class RegisterTest extends BaseTest{
 	{
 		RegisterPage Register = new RegisterPage(driver);
 		Register.RegisterNewUser(input.get("FName"), input.get("LName"), input.get("Email"), input.get("TelePhone"), input.get("Password"));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	    WebElement successMsg = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@id='content']//h1")));
+
+	    String Actual = successMsg.getText();
+	    Assert.assertEquals(Actual, "Your Account Has Been Created!");
+		Register.logOut();
 	}
 	
 	@DataProvider
@@ -25,5 +37,6 @@ public class RegisterTest extends BaseTest{
 		String FilePath = System.getProperty("user.dir")+"\\src\\test\\java\\NaveenAutomationLabs\\BaseTest\\RegisterDate.json";
 		List<HashMap<String,String>> input = dataReader(FilePath);
 		return new Object[][] {{input.get(0)},{input.get(1)}};
+
 	}
 }
