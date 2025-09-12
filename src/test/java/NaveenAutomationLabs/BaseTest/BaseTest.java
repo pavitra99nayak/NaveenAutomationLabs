@@ -41,7 +41,7 @@ public class BaseTest{
 		{
 			ChromeOptions option = new ChromeOptions();
 			//option.addArguments("--incognito");
-			option.addArguments("--window-size=1920,1080");
+			option.addArguments("--headless=new", "--disable-gpu", "--window-size=1920,1080");
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver(option);		
 		}
