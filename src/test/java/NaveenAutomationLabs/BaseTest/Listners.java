@@ -14,13 +14,13 @@ import com.aventstack.extentreports.Status;
 import NaveenAutomationLabs.AbstractMethods.ExtReports;
 
 public class Listners extends BaseTest implements ITestListener {
-	ExtentReports extentTest = ExtReports.XtentReports();
+	ExtentReports extent = ExtReports.XtentReports();
 	ExtentTest test;
 	ThreadLocal<ExtentTest> thread = new ThreadLocal<ExtentTest>();
 	@Override
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
-		test = extentTest.createTest(result.getMethod().getMethodName());
+		test = extent.createTest(result.getMethod().getMethodName());
 		thread.set(test);
 	}
 
@@ -55,7 +55,7 @@ public class Listners extends BaseTest implements ITestListener {
 	@Override
 	public void onFinish(ITestContext context) {
 		// TODO Auto-generated method stub
-		extentTest.flush();
+		extent.flush();
 	}
 
 }
