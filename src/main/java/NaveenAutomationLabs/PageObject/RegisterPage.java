@@ -47,7 +47,7 @@ public class RegisterPage extends AbstractMethod{
 	{
 		myActBtn.click();
 		loginBtn.click();
-		//WaitForVisibleElement(By.id("input-lastname"));
+		WaitForVisibleElement(By.id("input-lastname"));
 		fName.sendKeys(Name);
 		lName.sendKeys(LName);
 		email.sendKeys(Email);
@@ -62,7 +62,7 @@ public class RegisterPage extends AbstractMethod{
 	{
 		WaitForVisibleElement(By.xpath("//div[@class='pull-right']"));
 		continueBtn.click();
-		WaitForVisibleElement(By.xpath("//span[@class='hidden-xs hidden-sm hidden-md'])[3]"));
+		WaitForVisibleElement(By.xpath("(//span[@class='hidden-xs hidden-sm hidden-md'])[3]"));
 		myAct2.click();
 		logout.click();
 	}
