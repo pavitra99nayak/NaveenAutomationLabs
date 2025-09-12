@@ -33,7 +33,7 @@ public class BaseTest{
 	public void initiatlization() throws IOException
 	{	
 		Properties prop = new Properties();
-		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\java\\NaveenAutomationLabs\\BaseTest\\GlobalParam.properties");
+		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"/src/test/java/NaveenAutomationLabs/BaseTest/GlobalParam.properties");
 		prop.load(fis);
 		//String BrowserName = prop.getProperty("browser");
 		String BrowserName = System.getProperty("browser") != null ? System.getProperty("browser"):prop.getProperty("browser");
@@ -78,7 +78,7 @@ public class BaseTest{
 	{
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File FileSrc = ts.getScreenshotAs(OutputType.FILE);
-		String FileDest = System.getProperty("user.dir")+"\\ScreenShots\\"+MethodName+".png";
+		String FileDest = System.getProperty("user.dir")+"/ScreenShots/"+MethodName+".png";
 		FileUtils.copyFile(FileSrc, new File(FileDest));
 		return FileDest;
 	}

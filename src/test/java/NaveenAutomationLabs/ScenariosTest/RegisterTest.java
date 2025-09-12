@@ -34,7 +34,7 @@ public class RegisterTest extends BaseTest{
 	@DataProvider
 	public Object[][] DataSet() throws IOException
 	{
-		String FilePath = System.getProperty("user.dir")+"\\src\\test\\java\\NaveenAutomationLabs\\BaseTest\\RegisterDate.json";
+		String FilePath = System.getProperty("user.dir")+"/src/test/java/NaveenAutomationLabs/BaseTest/RegisterDate.json";
 		List<HashMap<String,String>> input = dataReader(FilePath);
 		return new Object[][] {{input.get(0)},{input.get(1)}};
 
