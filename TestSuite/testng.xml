@@ -6,12 +6,12 @@
 <listener class-name="NaveenAutomationLabs.BaseTest.Listners"/>
 </listeners>
 
-  <test thread-count="5" name="Test">
+  <test thread-count="5" name="Register Test">
     <classes>
       <class name="NaveenAutomationLabs.ScenariosTest.RegisterTest"/>
     </classes>
   </test> <!-- Test -->
-  <test thread-count="5" name="Test">
+  <test thread-count="5" name="Login Test">
     <classes>
       <class name="NaveenAutomationLabs.ScenariosTest.LoginTest"/>
     </classes>
