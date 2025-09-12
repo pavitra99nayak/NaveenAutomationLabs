@@ -62,6 +62,7 @@ public class RegisterPage extends AbstractMethod{
 	{
 		WaitForVisibleElement(By.xpath("//div[@class='pull-right']"));
 		continueBtn.click();
+		WaitForVisibleElement(By.xpath("//span[@class='hidden-xs hidden-sm hidden-md'])[3]"));
 		myAct2.click();
 		logout.click();
 	}
