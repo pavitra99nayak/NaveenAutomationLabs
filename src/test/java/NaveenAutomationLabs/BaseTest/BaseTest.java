@@ -45,21 +45,21 @@ public class BaseTest{
 			driver = new ChromeDriver(option);		
 		}
 		
-		else if (BrowserName.contains("edge"))
-		{
-			EdgeOptions option = new EdgeOptions();
-			option.addArguments("--incognito");
-			WebDriverManager.edgedriver().setup();
-			driver = new EdgeDriver(option);		
-		}
-		
-		else if (BrowserName.contains("firefox"))
-		{
-			FirefoxOptions option = new FirefoxOptions();
-			option.addArguments("--incognito");
-			WebDriverManager.firefoxdriver().setup();
-			driver = new FirefoxDriver(option);
-		}
+//		else if (BrowserName.contains("edge"))
+//		{
+//			EdgeOptions option = new EdgeOptions();
+//			option.addArguments("--incognito");
+//			WebDriverManager.edgedriver().setup();
+//			driver = new EdgeDriver(option);		
+//		}
+//		
+//		else if (BrowserName.contains("firefox"))
+//		{
+//			FirefoxOptions option = new FirefoxOptions();
+//			option.addArguments("--incognito");
+//			WebDriverManager.firefoxdriver().setup();
+//			driver = new FirefoxDriver(option);
+//		}
 		driver.manage().window().maximize();
 	}
 	
