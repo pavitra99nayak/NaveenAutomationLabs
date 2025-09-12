@@ -1,43 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-12T23:30:44 IST" name="Default suite" finished-at="2025-09-12T23:30:50 IST" duration-ms="5859">
+  <suite started-at="2025-09-13T00:01:22 IST" name="Default suite" finished-at="2025-09-13T00:01:31 IST" duration-ms="9059">
     <groups>
     </groups>
-    <test started-at="2025-09-12T23:30:44 IST" name="Default test" finished-at="2025-09-12T23:30:50 IST" duration-ms="5859">
-      <class name="NaveenAutomationLabs.ScenariosTest.LoginTest">
-        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:NaveenAutomationLabs.ScenariosTest.LoginTest@7ee8290b]" started-at="2025-09-12T23:30:44 IST" name="LaunchApplication" finished-at="2025-09-12T23:30:47 IST" duration-ms="2470" status="PASS">
+    <test started-at="2025-09-13T00:01:22 IST" name="Default test" finished-at="2025-09-13T00:01:31 IST" duration-ms="9059">
+      <class name="NaveenAutomationLabs.ScenariosTest.RegisterNegevetiveTest">
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:NaveenAutomationLabs.ScenariosTest.RegisterNegevetiveTest@79d8407f]" started-at="2025-09-13T00:01:22 IST" name="LaunchApplication" finished-at="2025-09-13T00:01:28 IST" duration-ms="5935" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchApplication -->
-        <test-method signature="ValidLogin(java.util.HashMap)[pri:0, instance:NaveenAutomationLabs.ScenariosTest.LoginTest@7ee8290b]" started-at="2025-09-12T23:30:47 IST" name="ValidLogin" data-provider="dataset" finished-at="2025-09-12T23:30:48 IST" duration-ms="1680" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{TelePhone=9022320931, Email=naveen171@gmail.com, LName=LastName, FName=naveen121, Password=Abcd@@1234}]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="EmailAlreadyExistTC1()[pri:0, instance:NaveenAutomationLabs.ScenariosTest.RegisterNegevetiveTest@79d8407f]" started-at="2025-09-13T00:01:28 IST" name="EmailAlreadyExistTC1" finished-at="2025-09-13T00:01:31 IST" duration-ms="2912" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ValidLogin -->
-        <test-method signature="ValidLogin(java.util.HashMap)[pri:0, instance:NaveenAutomationLabs.ScenariosTest.LoginTest@7ee8290b]" started-at="2025-09-12T23:30:48 IST" name="ValidLogin" data-provider="dataset" finished-at="2025-09-12T23:30:50 IST" duration-ms="1387" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{TelePhone=9022320931, Email=naveen172@gmail.com, LName=LastName, FName=NaveenTest2, Password=Abcd@@1234}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:NaveenAutomationLabs.ScenariosTest.LoginTest@7ee8290b]" started-at="2025-09-12T23:30:50 IST" name="tearDown" finished-at="2025-09-12T23:30:50 IST" duration-ms="112" status="PASS">
+        </test-method> <!-- EmailAlreadyExistTC1 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:NaveenAutomationLabs.ScenariosTest.RegisterNegevetiveTest@79d8407f]" started-at="2025-09-13T00:01:31 IST" name="tearDown" finished-at="2025-09-13T00:01:31 IST" duration-ms="158" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- NaveenAutomationLabs.ScenariosTest.LoginTest -->
+      </class> <!-- NaveenAutomationLabs.ScenariosTest.RegisterNegevetiveTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

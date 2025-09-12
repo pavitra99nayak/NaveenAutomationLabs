@@ -66,4 +66,19 @@ public class RegisterPage extends AbstractMethod{
 		myAct2.click();
 		logout.click();
 	}
+	
+	public void AlreadyAvailableEmail(String Name,String LName,String Email, String TelPhn,String Password)
+	{
+		myActBtn.click();
+		loginBtn.click();
+		WaitForVisibleElement(By.id("input-lastname"));
+		fName.sendKeys(Name);
+		lName.sendKeys(LName);
+		email.sendKeys(Email);
+		telPhone.sendKeys(TelPhn);
+		pass.sendKeys(Password);
+		confimPass.sendKeys(Password);
+		checbox.click();
+		cntBtn.click();
+	}
 }
