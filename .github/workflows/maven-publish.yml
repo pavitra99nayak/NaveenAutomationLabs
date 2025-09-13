@@ -29,4 +29,3 @@ jobs:
         name: extent-report
         path: |
           reports/**
-          ScreenShots/**
