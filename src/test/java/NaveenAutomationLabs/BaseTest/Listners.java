@@ -9,6 +9,7 @@ import org.testng.ITestResult;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 
 import NaveenAutomationLabs.AbstractMethods.ExtReports;
@@ -49,7 +50,8 @@ public class Listners extends BaseTest implements ITestListener {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		thread.get().addScreenCaptureFromPath(filepath, result.getMethod().getMethodName());
+		//thread.get().addScreenCaptureFromPath(filepath, result.getMethod().getMethodName());
+		thread.get().fail(MediaEntityBuilder.createScreenCaptureFromPath(filepath).build());
 	}
 
 	@Override
