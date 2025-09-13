@@ -4,15 +4,15 @@
   <listeners>
     <listener class-name="NaveenAutomationLabs.BaseTest.Listners"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="Register Test(failed)">
     <classes>
       <class name="NaveenAutomationLabs.ScenariosTest.RegisterTest">
         <methods>
-          <include name="ValidRegisterTC1" invocation-numbers="0 1"/>
+          <include name="ValidRegisterTC1" invocation-numbers="1"/>
           <include name="LaunchApplication"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- NaveenAutomationLabs.ScenariosTest.RegisterTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Register Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

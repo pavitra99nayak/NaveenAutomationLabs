@@ -1,36 +1,186 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-13T13:01:16 IST" name="Default suite" finished-at="2025-09-13T13:01:22 IST" duration-ms="6182">
+  <suite started-at="2025-09-13T16:28:12 IST" name="Suite" finished-at="2025-09-13T16:28:40 IST" duration-ms="27752">
     <groups>
     </groups>
-    <test started-at="2025-09-13T13:01:16 IST" name="Default test" finished-at="2025-09-13T13:01:22 IST" duration-ms="6182">
-      <class name="NaveenAutomationLabs.ScenariosTest.AddProductsToCartsTest">
-        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:NaveenAutomationLabs.ScenariosTest.AddProductsToCartsTest@192c3f1e]" started-at="2025-09-13T13:01:16 IST" name="LaunchApplication" finished-at="2025-09-13T13:01:19 IST" duration-ms="3347" status="PASS">
+    <test started-at="2025-09-13T16:28:12 IST" name="Register Test" finished-at="2025-09-13T16:28:19 IST" duration-ms="6954">
+      <class name="NaveenAutomationLabs.ScenariosTest.RegisterTest">
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:NaveenAutomationLabs.ScenariosTest.RegisterTest@14f232c4]" started-at="2025-09-13T16:28:12 IST" name="LaunchApplication" finished-at="2025-09-13T16:28:16 IST" duration-ms="3225" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchApplication -->
-        <test-method signature="Login(java.util.HashMap)[pri:0, instance:NaveenAutomationLabs.ScenariosTest.AddProductsToCartsTest@192c3f1e]" started-at="2025-09-13T13:01:20 IST" name="Login" data-provider="dataset" finished-at="2025-09-13T13:01:20 IST" duration-ms="461" status="PASS">
+        <test-method signature="ValidRegisterTC1(java.util.HashMap)[pri:0, instance:NaveenAutomationLabs.ScenariosTest.RegisterTest@14f232c4]" started-at="2025-09-13T16:28:16 IST" name="ValidRegisterTC1" data-provider="DataSet" finished-at="2025-09-13T16:28:18 IST" duration-ms="2205" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{TelePhone=9022320931, Email=naveen181@gmail.com, LName=LastName, FName=naveen121, Password=Abcd@@1234}]]>
+                <![CDATA[{TelePhone=9022320931, Email=naveen189@gmail.com, LName=LastName, FName=naveen121, Password=Abcd@@1234}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidRegisterTC1 -->
+        <test-method signature="ValidRegisterTC1(java.util.HashMap)[pri:0, instance:NaveenAutomationLabs.ScenariosTest.RegisterTest@14f232c4]" started-at="2025-09-13T16:28:18 IST" name="ValidRegisterTC1" data-provider="DataSet" finished-at="2025-09-13T16:28:19 IST" duration-ms="1031" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{TelePhone=9022320931, Email=naveen190@gmail.com, LName=LastName, FName=NaveenTest2, Password=Abcd@@1234}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='content']//h1"}
+  (Session info: chrome=140.0.7339.81)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [eff694db5131cb0c28f6c0949e32be0c, findElement {using=xpath, value=//div[@id='content']//h1}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.81, chrome: {chromedriverVersion: 140.0.7339.82 (bc93617e21c3..., userDataDir: C:\Users\acer\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62550}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62550/devtoo..., se:cdpVersion: 140.0.7339.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: eff694db5131cb0c28f6c0949e32be0c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='content']//h1"}
+  (Session info: chrome=140.0.7339.81)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [eff694db5131cb0c28f6c0949e32be0c, findElement {using=xpath, value=//div[@id='content']//h1}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.81, chrome: {chromedriverVersion: 140.0.7339.82 (bc93617e21c3..., userDataDir: C:\Users\acer\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62550}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62550/devtoo..., se:cdpVersion: 140.0.7339.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: eff694db5131cb0c28f6c0949e32be0c
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+at NaveenAutomationLabs.ScenariosTest.RegisterTest.ValidRegisterTC1(RegisterTest.java:22)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidRegisterTC1 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:NaveenAutomationLabs.ScenariosTest.RegisterTest@14f232c4]" started-at="2025-09-13T16:28:19 IST" name="tearDown" finished-at="2025-09-13T16:28:19 IST" duration-ms="250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- NaveenAutomationLabs.ScenariosTest.RegisterTest -->
+    </test> <!-- Register Test -->
+    <test started-at="2025-09-13T16:28:20 IST" name="Login Test" finished-at="2025-09-13T16:28:25 IST" duration-ms="5209">
+      <class name="NaveenAutomationLabs.ScenariosTest.LoginTest">
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:NaveenAutomationLabs.ScenariosTest.LoginTest@1c852c0f]" started-at="2025-09-13T16:28:20 IST" name="LaunchApplication" finished-at="2025-09-13T16:28:21 IST" duration-ms="1672" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="ValidLogin(java.util.HashMap)[pri:0, instance:NaveenAutomationLabs.ScenariosTest.LoginTest@1c852c0f]" started-at="2025-09-13T16:28:21 IST" name="ValidLogin" data-provider="dataset" finished-at="2025-09-13T16:28:23 IST" duration-ms="1668" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{TelePhone=9022320931, Email=naveen189@gmail.com, LName=LastName, FName=naveen121, Password=Abcd@@1234}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidLogin -->
+        <test-method signature="ValidLogin(java.util.HashMap)[pri:0, instance:NaveenAutomationLabs.ScenariosTest.LoginTest@1c852c0f]" started-at="2025-09-13T16:28:23 IST" name="ValidLogin" data-provider="dataset" finished-at="2025-09-13T16:28:25 IST" duration-ms="1682" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{TelePhone=9022320931, Email=naveen190@gmail.com, LName=LastName, FName=NaveenTest2, Password=Abcd@@1234}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:NaveenAutomationLabs.ScenariosTest.LoginTest@1c852c0f]" started-at="2025-09-13T16:28:25 IST" name="tearDown" finished-at="2025-09-13T16:28:25 IST" duration-ms="181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- NaveenAutomationLabs.ScenariosTest.LoginTest -->
+    </test> <!-- Login Test -->
+    <test started-at="2025-09-13T16:28:25 IST" name="Register Validation" finished-at="2025-09-13T16:28:36 IST" duration-ms="11560">
+      <class name="NaveenAutomationLabs.ScenariosTest.RegisterNegevetiveTest">
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:NaveenAutomationLabs.ScenariosTest.RegisterNegevetiveTest@13b3d178]" started-at="2025-09-13T16:28:25 IST" name="LaunchApplication" finished-at="2025-09-13T16:28:35 IST" duration-ms="10356" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="EmailAlreadyExistTC1()[pri:0, instance:NaveenAutomationLabs.ScenariosTest.RegisterNegevetiveTest@13b3d178]" started-at="2025-09-13T16:28:35 IST" name="EmailAlreadyExistTC1" finished-at="2025-09-13T16:28:36 IST" duration-ms="1000" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EmailAlreadyExistTC1 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:NaveenAutomationLabs.ScenariosTest.RegisterNegevetiveTest@13b3d178]" started-at="2025-09-13T16:28:36 IST" name="tearDown" finished-at="2025-09-13T16:28:36 IST" duration-ms="202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- NaveenAutomationLabs.ScenariosTest.RegisterNegevetiveTest -->
+    </test> <!-- Register Validation -->
+    <test started-at="2025-09-13T16:28:36 IST" name="Add To cart" finished-at="2025-09-13T16:28:40 IST" duration-ms="3790">
+      <class name="NaveenAutomationLabs.ScenariosTest.AddProductsToCartsTest">
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:NaveenAutomationLabs.ScenariosTest.AddProductsToCartsTest@28b46423]" started-at="2025-09-13T16:28:36 IST" name="LaunchApplication" finished-at="2025-09-13T16:28:38 IST" duration-ms="1804" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="Login(java.util.HashMap)[pri:0, instance:NaveenAutomationLabs.ScenariosTest.AddProductsToCartsTest@28b46423]" started-at="2025-09-13T16:28:38 IST" name="Login" data-provider="dataset" finished-at="2025-09-13T16:28:39 IST" duration-ms="395" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{TelePhone=9022320931, Email=naveen189@gmail.com, LName=LastName, FName=naveen121, Password=Abcd@@1234}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="AddToCart()[pri:0, instance:NaveenAutomationLabs.ScenariosTest.AddProductsToCartsTest@192c3f1e]" started-at="2025-09-13T13:01:20 IST" name="AddToCart" finished-at="2025-09-13T13:01:22 IST" depends-on-methods="NaveenAutomationLabs.ScenariosTest.AddProductsToCartsTest.Login" duration-ms="2035" status="PASS">
+        <test-method signature="AddToCart()[pri:0, instance:NaveenAutomationLabs.ScenariosTest.AddProductsToCartsTest@28b46423]" started-at="2025-09-13T16:28:39 IST" name="AddToCart" finished-at="2025-09-13T16:28:40 IST" depends-on-methods="NaveenAutomationLabs.ScenariosTest.AddProductsToCartsTest.Login" duration-ms="1311" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddToCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:NaveenAutomationLabs.ScenariosTest.AddProductsToCartsTest@192c3f1e]" started-at="2025-09-13T13:01:22 IST" name="tearDown" finished-at="2025-09-13T13:01:22 IST" duration-ms="211" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:NaveenAutomationLabs.ScenariosTest.AddProductsToCartsTest@28b46423]" started-at="2025-09-13T16:28:40 IST" name="tearDown" finished-at="2025-09-13T16:28:40 IST" duration-ms="273" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- NaveenAutomationLabs.ScenariosTest.AddProductsToCartsTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Add To cart -->
+  </suite> <!-- Suite -->
 </testng-results>
