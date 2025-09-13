@@ -92,9 +92,12 @@ public class BaseTest{
 	  @AfterTest(alwaysRun=true) 
 	  public void tearDown() 
 	  { 
-		  if (driver != null) {
-	        driver.quit();
-	    }
+		  if (driver != null) 
+		  {
+			  driver.quit();   
+		  }
 	  }
+	 
+	 
 	 
 }
